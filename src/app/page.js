@@ -19,7 +19,10 @@ import {
   FaGitAlt,
   FaGithubAlt,
   FaVscode,
-  FaIntellij
+  FaIntellij,
+  FaTrophy,
+  FaCodeBranch,
+  FaDatabase as FaDatabaseIcon
 } from 'react-icons/fa';
 import SkillCategory from './components/SkillCategory';
 
@@ -208,6 +211,77 @@ export default function Home() {
                 'IntelliJ IDEA'
               ]}
             />
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Achievements Section */}
+      <section id="achievements" className="section-padding bg-tertiary">
+        <div className="container-padding">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <motion.h2 
+              className="heading text-center mb-12"
+              initial={{ y: -30, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              Achievements
+            </motion.h2>
+            <motion.div 
+              className="grid grid-cols-1 md:grid-cols-3 gap-8"
+              initial={{ y: 30, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <motion.div 
+                className="bg-primary p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                whileHover={{ y: -5 }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className="flex items-center justify-center mb-4">
+                  <FaCodeBranch className="text-4xl text-secondary" />
+                </div>
+                <h3 className="text-xl font-semibold text-center mb-2">LeetCode</h3>
+                <p className="text-textSecondary text-center">
+                  Completed 250+ problems using Java
+                </p>
+              </motion.div>
+
+              <motion.div 
+                className="bg-primary p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                whileHover={{ y: -5 }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className="flex items-center justify-center mb-4">
+                  <FaTrophy className="text-4xl text-secondary" />
+                </div>
+                <h3 className="text-xl font-semibold text-center mb-2">GeeksforGeeks</h3>
+                <p className="text-textSecondary text-center">
+                  Completed 220+ problems using Java
+                </p>
+              </motion.div>
+
+              <motion.div 
+                className="bg-primary p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                whileHover={{ y: -5 }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className="flex items-center justify-center mb-4">
+                  <FaDatabaseIcon className="text-4xl text-secondary" />
+                </div>
+                <h3 className="text-xl font-semibold text-center mb-2">HackerRank</h3>
+                <p className="text-textSecondary text-center">
+                  3 Stars in MySQL
+                </p>
+              </motion.div>
+            </motion.div>
           </motion.div>
         </div>
       </section>
