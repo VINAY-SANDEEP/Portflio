@@ -35,15 +35,15 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.2 }}
           >
             <motion.h1 
               className="heading mb-4"
               initial={{ x: -100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
+              animate={{ x: 1, opacity: 1 }}
               transition={{ 
                 duration: 0.8,
-                type: "spring",
+                type:"spring",
                 stiffness: 100
               }}
             >
@@ -60,7 +60,7 @@ export default function Home() {
                 delay: 0.2
               }}
             >
-              MERN Stack Developer | ReactJS Enthusiast | Problem Solver
+              MERN Stack Developer | ReactJS Enthusiast | Passionate Problem Solver 
             </motion.p>
             <motion.p 
               className="text-lg text-textSecondary mb-8 max-w-2xl mx-auto"
@@ -75,7 +75,7 @@ export default function Home() {
             >
               A passionate B.Tech AIML student and MERN Stack Developer, crafting elegant solutions 
               and building user-friendly web applications. Currently pursuing my degree at Aditya College 
-              of Engineering with a CGPA of 8.52.
+              of Engineering and I also have a strong interest in the stock market..
             </motion.p>
             <motion.div 
               className="flex flex-wrap justify-center gap-4"
@@ -120,11 +120,14 @@ export default function Home() {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <img 
-                src="https://media.licdn.com/dms/image/v2/D5603AQGOE0pPT1uM7w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725239322014?e=1752105600&v=beta&t=JMY-8QpvLzBm2m2eACmrLtnD9K53pdRWUug5CXth_JU"
-                alt="Dwarampudi Vinay Sandeep Reddy"
-                className="rounded-full w-64 h-64 object-cover mx-auto shadow-lg"
-              />
+  <img 
+    src="https://media.licdn.com/dms/image/v2/D5603AQGOE0pPT1uM7w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725239322014?e=1752105600&v=beta&t=JMY-8QpvLzBm2m2eACmrLtnD9K53pdRWUug5CXth_JU"
+    alt="Dwarampudi Vinay Sandeep Reddy"
+    className="rounded-full w-64 h-64 object-cover mx-auto shadow-lg"
+    style={{
+      boxShadow: "0 20px 30px rgba(0, 0, 0, 0.4), 0 8px 10px rgba(0, 0, 0, 0.2)"
+    }}
+  />
             </motion.div>
             <motion.div 
               className="w-full md:w-2/3"
@@ -143,8 +146,7 @@ export default function Home() {
                   viewport={{ once: true }}
                 >
                   I am a passionate MERN Stack Developer with a focus on building user-friendly and responsive web applications. 
-                  Currently pursuing B.Tech in Artificial Intelligence and Machine Learning at Aditya College of Engineering (2023–2027) 
-                  with a CGPA of 8.52.
+                  Currently pursuing B.Tech in Artificial Intelligence and Machine Learning at Aditya College of Engineering (2023–2027) and I also have a strong interest in the stock market.  .
                 </motion.p>
                 <motion.p 
                   className="text-lg"
@@ -166,7 +168,7 @@ export default function Home() {
       <section id="skills" className="py-20">
         <div className="container mx-auto px-4">
           <motion.h2 
-            className="heading text-center mb-12"
+            className="heading text-center mb-12 "
             initial={{ y: -50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
@@ -175,7 +177,7 @@ export default function Home() {
             Skills
           </motion.h2>
           <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-red"
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -350,7 +352,7 @@ export default function Home() {
                 title="Bus Details App"
                 techStack={['HTML5', 'CSS3', 'JavaScript', 'ReactJS', 'Tailwind CSS']}
                 description="A bus search system with real-time data retrieval from JSON, featuring an intuitive user interface."
-                githubLink="https://github.com/VINAY-SANDEEP/Bus_details"
+                githubLink="https://github.com/VINAY-SANDEEP/Busl"
                 imageUrl="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
               />
               <ProjectCard
@@ -359,6 +361,13 @@ export default function Home() {
                 description="An interactive gift store with dynamic product display and engaging hover effects."
                 githubLink="https://github.com/VINAY-SANDEEP/Gift-Store"
                 imageUrl="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              />
+              <ProjectCard
+                title="Resource Mangement"
+                techStack={['HTML5', 'CSS3', 'JavaScript', 'ReactJS', 'Tailwind CSS',, 'Node.js', 'Express.js', 'MongoDB',]}
+                description="This React app is a resource management system that allows admins to upload, edit, and delete PDF resources by subject, unit, and topic, while students can view available materials easily."
+                githubLink="https://github.com/VINAY-SANDEEP/resources_frontend"
+                imageUrl="https://media.kasperskydaily.com/wp-content/uploads/sites/36/2023/03/29010204/pii-gathering-advice-featured.jpg"
               />
             </motion.div>
           </motion.div>

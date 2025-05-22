@@ -53,3 +53,10 @@
     @apply text-secondary;
   }
 }
+.text-gradient {
+  color: #108BDE;
+  background-image: linear-gradient(45deg, #108BDE, #DEBC14 50%, #DE2323 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
